@@ -19,7 +19,6 @@ class FileOps:
         return chunks
 
     async def delete_file(self, filename: str):
-    async def delete_file(self, filename: str):
         file_path = os.path.join(self.base_dir, filename)
         if os.path.exists(file_path):
             os.remove(file_path)

@@ -17,3 +17,9 @@ def retrieval_prompt(context: str, question: str) -> str:
     {question}
     
     """
+
+def evaluation_prompt(question: str, expected_answer: str, generated_answer: str) -> str:
+    return f"""
+    You are a LLM tester bot.
+    Evaluate the given generated answer for the question.
+    """

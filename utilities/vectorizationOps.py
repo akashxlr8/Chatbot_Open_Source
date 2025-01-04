@@ -18,13 +18,9 @@ class VectorizationOps:
 
     def embedding_setup(self):
         # Loading the embedding model from Hugging Face
-        # Loading the embedding model from Hugging Face
         embedding_model_name = self.model_name
         model_kwargs = {"device": "cpu"}  # Change to "cpu" to use CPU
-        model_kwargs = {"device": "cpu"}  # Change to "cpu" to use CPU
         embeddings = HuggingFaceEmbeddings(
-            model_name=embedding_model_name,
-            model_kwargs=model_kwargs
             model_name=embedding_model_name,
             model_kwargs=model_kwargs
         )

@@ -14,9 +14,11 @@ class FileOps:
         contents = await file.read()
         with open(file_path, "wb") as f:
             f.write(contents)
+            f.write(contents)
         chunks = self.vector_ops.process_file(file_path)
         return chunks
 
+    async def delete_file(self, filename: str):
     async def delete_file(self, filename: str):
         file_path = os.path.join(self.base_dir, filename)
         if os.path.exists(file_path):

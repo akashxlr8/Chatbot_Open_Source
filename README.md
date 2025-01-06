@@ -33,6 +33,10 @@ This repository implements an end-to-end RAG pipeline with file uploads, FAISS v
    ```bash
    ollama pull <model-name>
    ```
+7. Run the Ollama server:
+   ```bash 
+   ollama run <model-name>
+   ``` 
 7. Update `config.yaml` with your settings.
 
 ## Usage
